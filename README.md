@@ -10,7 +10,24 @@ Javascript, precisamente ECMAScript 6.
 
 ## Instalación
 
-Instalar Node.JS:
+Instalar NodeJS y NPM:
 
 [https://nodejs.org/es/download/package-manager/](https://nodejs.org/es/download/package-manager/)
 
+Instalar dependencias:
+
+```bash
+# donde se encuentra package.json
+npm install
+```
+
+## Estructura de carpetas
+
+ - ```src/``` contiene el código fuente, como las clases
+ - ```test/``` contiene los tests para cada una de las clases
+
+## Ejecutar tests
+
+```bash
+npm run test test
+```

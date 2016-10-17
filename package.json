@@ -1,8 +1,8 @@
 {
   "name": "ingsoftware-unit-testing",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Ejemplo de uso de tests unitarios para Ingeniería de Software",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
   },
@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/aboglioli/ingsoftware-unit-testing/issues"
   },
-  "homepage": "https://github.com/aboglioli/ingsoftware-unit-testing#readme",
+  "homepage": "https://github.com/aboglioli/ingsoftware-unit-testing",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.1.2"
