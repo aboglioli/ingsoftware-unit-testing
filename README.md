@@ -10,6 +10,12 @@ Javascript, precisamente ECMAScript 6.
 
 mocha + chai (*assertion library*)
 
+## ¿Cómo clonar este repositorio?
+
+```bash
+git clone https://github.com/aboglioli/ingsoftware-unit-testing.git
+```
+
 ## Instalación
 
 Instalar NodeJS y NPM:
