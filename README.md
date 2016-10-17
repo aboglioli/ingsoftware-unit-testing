@@ -27,6 +27,10 @@ Instalar dependencias:
 ```bash
 # donde se encuentra package.json
 npm install
+
+sudo npm install n -g
+
+sudo n latest
 ```
 
 ## Estructura de carpetas
