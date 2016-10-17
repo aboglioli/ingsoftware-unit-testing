@@ -8,6 +8,8 @@ Javascript, precisamente ECMAScript 6.
 
 ### Framework de testing
 
+mocha + chai (*assertion library*)
+
 ## Instalación
 
 Instalar NodeJS y NPM:
@@ -29,5 +31,9 @@ npm install
 ## Ejecutar tests
 
 ```bash
-npm run test test
+npm run test
 ```
+
+## Referencias
+
+ - Chai: [http://chaijs.com/api/bdd/](http://chaijs.com/api/bdd/)
