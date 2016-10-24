@@ -2,41 +2,29 @@ class Persona {
   constructor(nombre, apellido, fechaNacimiento) {
     this.nombre = nombre;
     this.apellido = apellido;
-    this.fechaNacimiento = fechaNacimiento;
+    this.setFechaNacimiento(fechaNacimiento);
   }
 
-  set fechaNacimiento(fechaNacimiento) {
-    this._fechaNacimiento = fechaNacimiento instanceof Date
+  setUsuario(usuario) {
+    if(usuario.length < 5) {
+      throw new Error('Usuario debe tener al menos 5 caracteres');
+    }
+    this.usuario = usuario;
+  }
+
+  setContrasenia(contrasenia) {
+    if(contrasenia.length < 8) {
+      throw new Error('Contraseña debe tener al menos 8 caracteres');
+    }
+    this.contrasenia = contrasenia;
+  }
+
+  setFechaNacimiento(fechaNacimiento) {
+    // si la fecha de nacimiento no es del tipo Date, crea una nueva instancia
+    // de Date
+    this.fechaNacimiento = fechaNacimiento instanceof Date
                             ? fechaNacimiento
                             : new Date(fechaNacimiento); // formato MM/DD/YYYY
-  }
-
-  get fechaNacimiento() {
-    return this._fechaNacimiento;
-  }
-
-  set padre(padre) {
-    if(this._padre) {
-      throw new Error('Ya existe padre asignado');
-    }
-
-    this._padre = padre;
-  }
-
-  get padre() {
-    return this._padre;
-  }
-
-  set madre(madre) {
-    if(this._madre) {
-      throw new Error('Ya existe madre asignada');
-    }
-
-    this._madre = madre;
-  }
-
-  get madre() {
-    return this._madre;
   }
 
   getEdad() {
