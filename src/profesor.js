@@ -1,3 +1,5 @@
+'use strict';
+
 const Persona = require('./persona');
 
 class Profesor extends Persona {

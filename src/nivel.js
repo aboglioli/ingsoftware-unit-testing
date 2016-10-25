@@ -1,3 +1,5 @@
+'use strict';
+
 class Nivel {
   constructor(numero, puntuacionMinima) {
     this.nombre;

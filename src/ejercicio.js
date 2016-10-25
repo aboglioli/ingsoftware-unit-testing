@@ -1,5 +1,12 @@
+'use strict';
+
 class Ejercicio {
   constructor(enunciado, expresionMatematica, resultadoEsperado, puntuacion, tipo) {
+
+    if (puntuacion < 1 || puntuacion > 10) {
+      throw new Error('Puntuacion fuera de rango');
+    }
+
     this.enunciado = enunciado;
     this.expresionMatematica = expresionMatematica;
     this.resultadoEsperado = resultadoEsperado;

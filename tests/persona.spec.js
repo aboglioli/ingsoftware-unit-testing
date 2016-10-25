@@ -32,4 +32,10 @@ describe('Persona', () => {
     expect(pers.setUsuario.bind(pers, 'admin')).to.not.throw('Usuario debe tener al menos 5 caracteres');
     expect(pers.setContrasenia.bind(pers, '12345678')).to.not.throw('Contraseña debe tener al menos 8 caracteres');
   });
+
+  it('la fecha de nacimiento debe estar en el formato mm/dd/yyyy', () => {
+    expect(() => new Persona('Nombre', 'Apellido', '24/01/1994')).to.throw('Fecha invalida');
+    expect(() => new Persona('Nombre', 'Apellido', 'asdasda')).to.throw('Fecha invalida');
+    expect(() => new Persona('Nombre', 'Apellido')).to.throw('Fecha invalida');
+  });
 });

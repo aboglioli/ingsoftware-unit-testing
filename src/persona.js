@@ -1,3 +1,5 @@
+'use strict';
+
 class Persona {
   constructor(nombre, apellido, fechaNacimiento) {
     this.nombre = nombre;
@@ -25,6 +27,10 @@ class Persona {
     this.fechaNacimiento = fechaNacimiento instanceof Date
                             ? fechaNacimiento
                             : new Date(fechaNacimiento); // formato MM/DD/YYYY
+
+    if (isNaN(this.fechaNacimiento)) {
+      throw new Error('Fecha invalida');
+    }
   }
 
   getEdad() {

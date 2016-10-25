@@ -1,3 +1,5 @@
+'use strict';
+
 class Tematica {
   constructor(nombre) {
     this.nombre = nombre;

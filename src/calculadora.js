@@ -1,3 +1,5 @@
+'use strict';
+
 function calcular(expresionMatematica) {
   // La expresion regular sólo permite expresiones que contenga más de una
   // caracter, el cual puede ser: número entero, paréntesis y operadores +, -,
