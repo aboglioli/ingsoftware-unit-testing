@@ -1,7 +1,9 @@
 'use strict';
 
+const calcular = require('./calculadora');
+
 class Ejercicio {
-  constructor(enunciado, expresionMatematica, resultadoEsperado, puntuacion, tipo) {
+  constructor(enunciado, expresionMatematica, puntuacion, tipo) {
 
     if (puntuacion < 1 || puntuacion > 10) {
       throw new Error('Puntuacion fuera de rango');
@@ -9,7 +11,6 @@ class Ejercicio {
 
     this.enunciado = enunciado;
     this.expresionMatematica = expresionMatematica;
-    this.resultadoEsperado = resultadoEsperado;
     this.puntuacion = puntuacion;
 
     // Con tipo sabemos si es un ejercicio "simple" (donde sólo hay que ingresar
@@ -23,6 +24,8 @@ class Ejercicio {
     // asignado nada, pero no estará disponible para mostrarselo al usuario que
     // vaya a jugar.
     this.disponible = false;
+
+    this.resultadoEsperado = calcular(expresionMatematica);
   }
 
   setTematica(tematica) {

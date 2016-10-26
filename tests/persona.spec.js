@@ -21,7 +21,7 @@ describe('Persona', () => {
     expect(pers.getEdad()).to.equal(22);
   });
 
-  it('no debo poder asignarle un usuario y contraseña menor a 5 y 8 caracteres respectivamente', () => {
+  it('debe validar un usuario y contraseña menor a 5 y 8 caracteres respectivamente', () => {
     let pers = new Persona('Nombre', 'Apellido', '08/01/1994');
 
     // El bind es un caso particular, no le den importancia, solo usenlo para
@@ -33,7 +33,7 @@ describe('Persona', () => {
     expect(pers.setContrasenia.bind(pers, '12345678')).to.not.throw('Contraseña debe tener al menos 8 caracteres');
   });
 
-  it('la fecha de nacimiento debe estar en el formato mm/dd/yyyy', () => {
+  it('debe valiar la fecha de nacimiento en el formato mm/dd/yyyy', () => {
     expect(() => new Persona('Nombre', 'Apellido', '24/01/1994')).to.throw('Fecha invalida');
     expect(() => new Persona('Nombre', 'Apellido', 'asdasda')).to.throw('Fecha invalida');
     expect(() => new Persona('Nombre', 'Apellido')).to.throw('Fecha invalida');
