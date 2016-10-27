@@ -90,3 +90,10 @@ npm run test
 ## Referencias
 
  - Chai: [http://chaijs.com/api/bdd/](http://chaijs.com/api/bdd/)
+
+# Test de integración o automatización
+
+Se encuentran dentro de ```integration_testing/tests```.
+
+Para correrlos, ejecutar: ```npm run casper``` dentro del directorio raíz.
+
