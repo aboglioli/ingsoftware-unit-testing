@@ -1,5 +1,7 @@
 # Test Unitario en Javascript
 
+![https://travis-ci.org/aboglioli/ingsoftware-unit-testing.svg?branch=master](https://travis-ci.org/aboglioli/ingsoftware-unit-testing.svg?branch=master)
+
 Ejemplo para la materia **Ingeniería de Software** en **FRM-UTN**.
 
 ### Lenguaje elegido
@@ -86,6 +88,20 @@ sudo n latest
 ```bash
 npm run test
 ```
+
+# Integración con Travis CI
+
+No es necesario tener instalado todo lo anterior para correr los tests. Se
+pueden correr en la nube, en un servicio como TravisCI. Entonces, cada vez que
+se realice un *commit*, TravisCI se encargará de correr los tests unitarios y de
+integración, para luego poder ver los resultados.
+
+De esta forma nos desligamos de tener que correr los tests en nuestras máquinas
+y además todos los miembros de equipo podremos ver si algún test no pasó y un
+*log* del mismo.
+
+Se configuró para que corra primero los tests unitarios con **mocha** y luego
+los de integración con **casperjs**.
 
 ## Referencias
 
