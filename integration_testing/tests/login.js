@@ -1,16 +1,22 @@
 // const casper = require('casper').create();
 
-casper.test.begin('Bloque de login debe existir', 2, function(test) {
+casper.test.begin('Bloque de login debe existir', 4, function(test) {
 
-  casper.start("http://newtours.demoaut.com/", function() {
-    test.assertTitle("Welcome: Mercury Tours", "título de página correcto");
-    test.assertExists('form[name="home"]', "formulario de login encontrado");
+  casper.start('http://newtours.demoaut.com/', function() {
+    test.assertTitle('Welcome: Mercury Tours', 'título de página correcto');
+    test.assertExists('form[name="home"]', 'formulario de login encontrado');
+    test.assertExists('input[name="userName"]', 'campo de usuario existe');
+    test.assertExists('input[name="password"]', 'campo contraseña existe');
   });
 
   casper.then(function() {
-    // this.fill('form[action="/search"]', {
-    //   q: "casperjs"
-    // }, true);
+    this.fill('form[action="login.php"]', {
+      userName: 'tutorial',
+      password: '123456'
+    }, true);
+
+    this.click('input[name="login"]');
+
   });
 
   // casper.then(function() {

@@ -4,8 +4,8 @@
   "description": "Ejemplo de uso de tests unitarios para Ingeniería de Software",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha tests --recursive",
-    "casper": "casperjs test integration_testing/tests"
+    "test": "mocha tests --recursive && casperjs test integration_testing/tests",
+    "casperjs": "casperjs test integration_testing/tests"
   },
   "repository": {
     "type": "git",
