@@ -4,6 +4,9 @@
 
 Ejemplo para la materia **Ingeniería de Software** en **FRM-UTN**.
 
+Resultados de tests unitarios y de integración:
+[https://travis-ci.org/aboglioli/ingsoftware-unit-testing](https://travis-ci.org/aboglioli/ingsoftware-unit-testing)
+
 ### Lenguaje elegido
 
 Javascript, precisamente ECMAScript 6.
