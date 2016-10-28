@@ -113,3 +113,8 @@ Se encuentran dentro de ```integration_testing/tests```.
 
 Para correrlos, ejecutar: ```npm run casper``` dentro del directorio raíz.
 
+
+# Casos de Prueba
+
+La resolución del TP5 "Casos de Pruebas" se encuentra dentro de ```ingsoftware-unit-testing/docs``` 
+con el nombre Trabajo Practico N°5 - Casos de Prueba.docx
