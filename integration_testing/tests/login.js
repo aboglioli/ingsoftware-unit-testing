@@ -1,5 +1,3 @@
-// const casper = require('casper').create();
-
 var loginFormSelector = 'form[action="login.php"][name="home"]';
 var userNameSelector = 'input[type="text"][name="userName"]';
 var passwordSelector = 'input[type="password"][name="password"]';
